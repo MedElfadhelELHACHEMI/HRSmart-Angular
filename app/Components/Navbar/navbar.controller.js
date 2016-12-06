@@ -2,7 +2,7 @@
     'use strict';
     function controllerFn($scope,$window){
         $scope.goto = function(path){
-            $window.location.href = "#"+path;
+            $window.location.href = path;
         }
         $scope.material = function(){
             $window.location.href = "https://material.angularjs.org/";

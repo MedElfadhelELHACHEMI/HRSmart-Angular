@@ -17,16 +17,18 @@
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
     <link rel="stylesheet" href="app.css">
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
-
-
 </head>
 
 <body>
     <div ng-controller="NavbarController" ng-cloak>
         <md-content class="md-padding">
             <navbar></navbar>
-            <div class="ext-content" flex="70" flex-offset="15">
-                <div ng-view></div>
+            <div layout="row" layout-sm="column">
+                <jobsearchhelper flex-gt-sm="20" flex-order-sm="2"></jobsearchhelper>
+                <div class="ext-content" flex flex-order-sm="3">
+                    <div ng-view></div>
+                </div>
+                <usersidebar flex-gt-sm="20" flex-order-sm="1"></usersidebar>
             </div>
         </md-content>
     </div>
@@ -39,19 +41,26 @@
     <script src="bower_components/angular-aria/angular-aria.min.js"></script>
     <script src="bower_components/angular-messages/angular-messages.min.js"></script>
     <script src="bower_components/angular-material/angular-material.min.js"></script>
-    <!-- Our App -->
+    <!-- Modules -->
     <script src="app.js"></script>
+    <script src="Components/UserSideBar/userSideBar.module.js"></script>
+    <script src="Components/JobSearchHelper/jobSearchHelper.module.js"></script>
+    <script src="Components/JobOffers/jobOffers.module.js"></script>
     <!-- Config -->
     <script src="Components/Navbar/navbar.config.js"></script>
     <script src="Components/ThemingProvider/themingProvider.config.js"></script>
     <!-- Directives -->
     <script src="Components/Navbar/navbar.directive.js"></script>
+    <script src="Components/UserSideBar/userSideBar.directive.js"></script>
+    <script src="Components/JobSearchHelper/jobSearchHelper.directive.js"></script>
+    <script src="Components/JobOffers/jobOffer.directive.js"></script>
     <!-- Services -->
 
     <!-- Controller -->
     <script src="Components/Navbar/navbar.controller.js"></script>
-    <script src="Components/Test1/test1.controller.js"></script>
-    <script src="Components/Test2/test2.controller.js"></script>
+    <script src="Components/UserSideBar/userSideBar.controller.js"></script>
+    <script src="Components/JobSearchHelper/jobSearchHelper.controller.js"></script>
+    <script src="Components/JobOffers/jobOffers.controller.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,14 @@
+<div layout="column">
+    <h2>{{j.name}}</h2>
+    <p>{{j.description}}</p>
+    <div layout="row">
+        Skills Required:
+        <div ng-repeat="s in j.jobSkills">
+            <span style="margin-left:30px;">{{s.name}}</span>
+        </div>
+    </div>
+    <div layout="row" layout-align="end center">
+        <md-button class=" md-raised md-primary">Apply</md-button>
+        <md-button class=" md-raised md-primary">Reffer</md-button>
+    </div>
+</div>

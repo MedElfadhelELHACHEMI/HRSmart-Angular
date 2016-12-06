@@ -2,9 +2,9 @@
     angular.module("myApp").config(function ($mdThemingProvider) {
         $mdThemingProvider
             .theme('default')
-            .primaryPalette('blue')
+            .primaryPalette('red')
             .accentPalette('light-blue')
             .warnPalette('red')
-            .backgroundPalette('grey');
+            .backgroundPalette('blue');
     });
 })(angular);
