@@ -4,7 +4,7 @@
     function direvtiveFN() {
         return {
             restrict: 'E',
-            templateUrl: 'Components/Navbar/navbar.view.html'
+            templateUrl: 'Components/Shared/Navbar/navbar.view.html'
         }
     }
     angular.module('myApp').directive('navbar', direvtiveFN);

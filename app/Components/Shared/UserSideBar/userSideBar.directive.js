@@ -4,7 +4,7 @@
     function direvtiveFN() {
         return {
             restrict: 'E',
-            templateUrl: 'Components/UserSideBar/userSideBar.view.html'
+            templateUrl: 'Components/Shared/UserSideBar/userSideBar.view.html'
         }
     }
     angular.module('UserSideBar').directive('usersidebar', direvtiveFN);

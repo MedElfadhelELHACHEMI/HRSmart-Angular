@@ -4,7 +4,7 @@
     function direvtiveFN() {
         return {
             restrict: 'E',
-            templateUrl: 'Components/JobSearchHelper/jobSearchHelper.view.html'
+            templateUrl: 'Components/Shared/JobSearchHelper/jobSearchHelper.view.html'
         }
     }
     angular.module('JobSearchHelper').directive('jobsearchhelper', direvtiveFN);

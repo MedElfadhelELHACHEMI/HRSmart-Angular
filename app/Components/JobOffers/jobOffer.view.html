@@ -1,14 +1,22 @@
-<div layout="column">
-    <h2>{{j.name}}</h2>
-    <p>{{j.description}}</p>
-    <div layout="row">
-        Skills Required:
-        <div ng-repeat="s in j.jobSkills">
-            <span style="margin-left:30px;">{{s.name}}</span>
+<md-card>
+    <md-toolbar class="md-primary">
+        <div class="md-toolbar-tools">
+            <h2>{{j.name}}</h2>
         </div>
+    </md-toolbar>
+    <div layout="column">
+        <md-card-content>
+            <p>{{j.description}}</p>
+            <div layout="row">
+                Skills Required:
+                <div ng-repeat="s in j.jobSkills">
+                    <span style="margin-left:30px;">{{s.name}}</span>
+                </div>
+            </div>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button class=" md-raised md-primary">Apply</md-button>
+                <md-button class=" md-raised md-primary">Reffer</md-button>
+            </md-card-actions>
+        </md-card-content>
     </div>
-    <div layout="row" layout-align="end center">
-        <md-button class=" md-raised md-primary">Apply</md-button>
-        <md-button class=" md-raised md-primary">Reffer</md-button>
-    </div>
-</div>
+</md-card>
