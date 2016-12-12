@@ -1,0 +1,39 @@
+<md-sidenav class="md-sidenav-right" md-component-id="right"
+             md-whiteframe="4">
+
+    <md-toolbar class="md-theme-indigo">
+        <div layout="row" layout-align="space-between center">
+            <md-icon ng-style="{color: 'rgb(89, 226, 168)',cursor:'pointer'}"
+                     aria-label="eject"
+                     class="material-icons step"
+                     ng-class="md-48"
+                     ng-click="toggleRight()">
+                eject
+            </md-icon>
+        <h1 class="md-toolbar-tools">Login/Register</h1>
+
+        </div>
+    </md-toolbar>
+
+    <md-content layout-margin>
+        <md-tabs md-dynamic-height md-border-bottom>
+            <md-tab label="Login">
+                <md-content class="md-padding">
+                    <h1 class="md-display-2">Login</h1>
+                    <p>Add Login form here</p>
+                </md-content>
+            </md-tab>
+            <md-tab label="Register">
+                <md-content class="md-padding">
+                    <h1 class="md-display-2">Register</h1>
+                    <p>Add Register Form here</p>
+                </md-content>
+            </md-tab>
+
+        </md-tabs>
+
+    </md-content>
+
+</md-sidenav>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">

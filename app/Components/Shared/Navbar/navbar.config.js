@@ -7,6 +7,9 @@
         }).when('/test2',{
             controller:"Test2Controller",
             templateUrl:"Components/Test2/test2.view.html"
+        }).when('/',{
+            controller:'IndexContentController',
+            templateUrl:'Components/Shared/IndexContent/indexContent.view.html'
         }).otherwise('/');
     }
     

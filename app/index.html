@@ -23,12 +23,11 @@
     <div ng-controller="NavbarController" ng-cloak>
         <md-content class="md-padding">
             <navbar></navbar>
+            <sidenav></sidenav>
             <div layout="row" layout-sm="column" style="margin-top:36px;">
-                <usersidebar flex-gt-sm="20" flex-order-sm="1"></usersidebar>
                 <div class="ext-content" flex flex-order-sm="3">
                     <div ng-view></div>
-                </div>                
-                <jobsearchhelper flex-gt-sm="20" flex-order-sm="2"></jobsearchhelper>
+                </div>
             </div>
         </md-content>
     </div>
@@ -46,14 +45,21 @@
     <script src="Components/Shared/UserSideBar/userSideBar.module.js"></script>
     <script src="Components/Shared/JobSearchHelper/jobSearchHelper.module.js"></script>
     <script src="Components/JobOffers/jobOffers.module.js"></script>
+    <script src="Components/Shared/IndexContent/indexContent.module.js"></script>
+
     <!-- Config -->
     <script src="Components/Shared/Navbar/navbar.config.js"></script>
     <script src="Components/Shared/ThemingProvider/themingProvider.config.js"></script>
+    <script src="Components/Shared/IndexContent/indexContent.config.js"></script>
+
+
     <!-- Directives -->
     <script src="Components/Shared/Navbar/navbar.directive.js"></script>
     <script src="Components/Shared/UserSideBar/userSideBar.directive.js"></script>
     <script src="Components/Shared/JobSearchHelper/jobSearchHelper.directive.js"></script>
     <script src="Components/JobOffers/jobOffer.directive.js"></script>
+    <script src="Components/Shared/SideNav/sidenav.directive.js"></script>
+
     <!-- Services -->
 
     <!-- Controller -->
@@ -61,6 +67,9 @@
     <script src="Components/Shared/UserSideBar/userSideBar.controller.js"></script>
     <script src="Components/Shared/JobSearchHelper/jobSearchHelper.controller.js"></script>
     <script src="Components/JobOffers/jobOffers.controller.js"></script>
+    <script src="Components/Shared/SideNav/sidenav.controller.js"></script>
+    <script src="Components/Shared/IndexContent/indexContent.controller.js"></script>
+
 </body>
 
 </html>
